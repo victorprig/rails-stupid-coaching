@@ -1,0 +1,9 @@
+<h1>CoachingController#answer</h1>
+<p>Find me in app/views/coaching_controller/answer.html.erb</p>
+
+<ul>
+<% @answers.each do |x| %>
+  <li><%= x[:query]%> (<%= x[:coachanswer] %>)</li>
+<% end %>
+<%= link_to "ask page", ask_path %>
+</ul>
